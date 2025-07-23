@@ -30,7 +30,7 @@ try:
     except ValueError:
         raise AssertionError("second arg should be integer")
     assert isinstance(S, str), "First argument must be a string"
-    is_longuer = lambda word : len(word)>N
+    is_longuer = lambda S : len(S)>N
     res =  ft_filter(is_longuer, S.split())
     print(res)
 
